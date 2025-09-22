@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+	<head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta charset="utf-8">
+	<meta name="description" content="спорт, виды спорта, культура спорта, спорт России, ">
+	<meta name="generator" content="Helix Ultimate - The Most Popular Joomla! Template Framework.">
+	<title>Объекты и классы</title>
+	<link href="/Aurora/images/images.jpg" rel="icon" type="image/vnd.microsoft.icon">
+	<link href="http://localhost/Aurora/index.php/component/finder/search?format=opensearch&amp;Itemid=101" rel="search" title="OpenSearch Изучаем PHP" type="application/opensearchdescription+xml">
+<link href="/Aurora/media/vendor/awesomplete/css/awesomplete.css?1.1.5" rel="stylesheet" />
+	<link href="/Aurora/media/mod_articles_news/css/template.min.css?933528c3e9c0fe9daadfd9e9752bbf0a" rel="stylesheet" />
+	<link href="/Aurora/media/vendor/joomla-custom-elements/css/joomla-alert.min.css?0.2.0" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Laila:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari&amp;display=swap" rel="stylesheet" media="none" onload="media=&quot;all&quot;" />
+	<link href="//fonts.googleapis.com/css?family=Akaya Kanadaka:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=kannada&amp;display=swap" rel="stylesheet" media="none" onload="media=&quot;all&quot;" />
+	<link href="//fonts.googleapis.com/css?family=Alike:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin&amp;display=swap" rel="stylesheet" media="none" onload="media=&quot;all&quot;" />
+	<link href="//fonts.googleapis.com/css?family=Alef:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=hebrew&amp;display=swap" rel="stylesheet" media="none" onload="media=&quot;all&quot;" />
+	<link href="/Aurora/templates/shaper_helixultimate/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/Aurora/plugins/system/helixultimate/assets/css/system-j4.min.css" rel="stylesheet" />
+	<link href="/Aurora/media/system/css/joomla-fontawesome.min.css?933528c3e9c0fe9daadfd9e9752bbf0a" rel="stylesheet" />
+	<link href="/Aurora/templates/shaper_helixultimate/css/template.css" rel="stylesheet" />
+	<link href="/Aurora/templates/shaper_helixultimate/css/presets/default.css" rel="stylesheet" />
+	<style>body{font-family: 'Laila', sans-serif;font-size: 36px;text-decoration: none;}
+</style>
+	<style>h1{font-family: 'Akaya Kanadaka', sans-serif;text-decoration: none;}
+</style>
+	<style>h2{font-family: 'Alike', sans-serif;text-decoration: none;}
+</style>
+	<style>.sp-megamenu-parent > li > a, .sp-megamenu-parent > li > span, .sp-megamenu-parent .sp-dropdown li.sp-menu-item > a{font-family: 'Alef', sans-serif;font-weight: 200;text-decoration: none;}
+</style>
+	<style>.menu.nav-pills > li > a, .menu.nav-pills > li > span, .menu.nav-pills .sp-dropdown li.sp-menu-item > a{font-family: 'Alef', sans-serif;font-weight: 200;text-decoration: none;}
+</style>
+	<style>.logo-image {height:36px;}.logo-image-phone {height:36px;}</style>
+	<style>@media(max-width: 992px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}</style>
+	<style>@media(max-width: 576px) {.logo-image {height: 36px;}.logo-image-phone {height: 36px;}}</style>
+<script src="/Aurora/media/vendor/jquery/js/jquery.min.js?3.7.1"></script>
+	<script src="/Aurora/media/legacy/js/jquery-noconflict.min.js?647005fc12b79b3ca2bb30c059899d5994e3e34d"></script>
+	<script type="application/json" class="joomla-script-options new">{"data":{"breakpoints":{"tablet":991,"mobile":480},"header":{"stickyOffset":"100"}},"joomla.jtext":{"MOD_FINDER_SEARCH_VALUE":"Search &hellip;","JLIB_JS_AJAX_ERROR_OTHER":"An error has occurred while fetching the JSON data: HTTP %s status code.","JLIB_JS_AJAX_ERROR_PARSE":"A parse error has occurred while processing the following JSON data:<br><code style=\"color:inherit;white-space:pre-wrap;padding:0;margin:0;border:0;background:inherit;\">%s<\/code>","ERROR":"Error","MESSAGE":"Message","NOTICE":"Notice","WARNING":"Warning","JCLOSE":"Close","JOK":"OK","JOPEN":"Open","JLIB_FORM_CONTAINS_INVALID_FIELDS":"The form cannot be submitted as it's missing required data. <br> Please correct the marked fields and try again.","JLIB_FORM_FIELD_REQUIRED_VALUE":"Please fill in this field","JLIB_FORM_FIELD_REQUIRED_CHECK":"One of the options must be selected","JLIB_FORM_FIELD_INVALID_VALUE":"This value is not valid"},"finder-search":{"url":"\/Aurora\/index.php\/component\/finder\/?task=suggestions.suggest&format=json&tmpl=component&Itemid=101"},"system.paths":{"root":"\/Aurora","rootFull":"http:\/\/localhost\/Aurora\/","base":"\/Aurora","baseFull":"http:\/\/localhost\/Aurora\/"},"csrf.token":"9471361cf95a4132cac8ca6ffcc20df1","system.keepalive":{"interval":840000,"uri":"\/Aurora\/index.php\/component\/ajax\/?format=json"},"accessibility-options":{"labels":{"menuTitle":"Accessibility Options","increaseText":"Increase Text Size","decreaseText":"Decrease Text Size","increaseTextSpacing":"Increase Text Spacing","decreaseTextSpacing":"Decrease Text Spacing","invertColors":"Invert Colours","grayHues":"Grey Hues","underlineLinks":"Underline Links","bigCursor":"Big Cursor","readingGuide":"Reading Guide","textToSpeech":"Text to Speech","speechToText":"Speech to Text","resetTitle":"Reset","closeTitle":"Close"},"icon":{"position":{"left":{"size":"0","units":"px"}},"useEmojis":true},"hotkeys":{"enabled":true,"helpTitles":true},"textToSpeechLang":["en-GB"],"speechToTextLang":["en-GB"]}}</script>
+	<script src="/Aurora/media/system/js/core.min.js?37ffe4186289eba9c5df81bea44080aff77b9684"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/bootstrap-es5.min.js?5.3.2" nomodule defer></script>
+	<script src="/Aurora/media/system/js/showon-es5.min.js?0e293ba9dec283752e25f4e1d5eb0a6f8c07d3be" defer nomodule></script>
+	<script src="/Aurora/media/com_finder/js/finder-es5.min.js?e6d3d1f535e33b5641e406eb08d15093e7038cc2" nomodule defer></script>
+	<script src="/Aurora/media/system/js/messages-es5.min.js?c29829fd2432533d05b15b771f86c6637708bd9d" nomodule defer></script>
+	<script src="/Aurora/media/system/js/fields/validate.min.js?16f3d8b4bad90666d11636743950e1c4fade735f" defer></script>
+	<script src="/Aurora/media/system/js/keepalive-es5.min.js?4eac3f5b0c42a860f0f438ed1bea8b0bdddb3804" defer nomodule></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/offcanvas.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/system/js/showon.min.js?f79c256660e2c0ca2179cf7f3168ea8143e1af82" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/toast.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/tab.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/scrollspy.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/popover.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/collapse.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/modal.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/dropdown.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/carousel.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/button.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/vendor/bootstrap/js/alert.min.js?5.3.2" type="module"></script>
+	<script src="/Aurora/media/system/js/keepalive.min.js?9f10654c2f49ca104ca0449def6eec3f06bd19c0" type="module"></script>
+	<script src="/Aurora/media/vendor/awesomplete/js/awesomplete.min.js?1.1.5" defer></script>
+	<script src="/Aurora/media/com_finder/js/finder.min.js?a2c3894d062787a266d59d457ffba5481b639f64" type="module"></script>
+	<script src="/Aurora/media/system/js/messages.min.js?7f7aa28ac8e8d42145850e8b45b3bc82ff9a6411" type="module"></script>
+	<script src="/Aurora/media/vendor/accessibility/js/accessibility.min.js?3.0.17" defer></script>
+	<script src="/Aurora/templates/shaper_helixultimate/js/main.js"></script>
+	<script type="module">window.addEventListener("load", function() {new Accessibility(Joomla.getOptions("accessibility-options") || {});});</script>
+	<script>template="shaper_helixultimate";</script>
+			</head>
+	<body class="site helix-ultimate hu com_contact com-contact view-contact layout-default task-none itemid-101 en-gb ltr sticky-header layout-fluid offcanvas-init offcanvs-position-left">
+
+		
+		
+		<div class="body-wrapper">
+			<div class="body-innerwrapper">
+				
+	<div class="sticky-header-placeholder"></div>
+<div id="sp-header-topbar">
+	<div class="container">
+		<div class="container-inner">
+		<div class="row align-items-center">
+					<!-- Contact -->
+					<div id="sp-contact" class="col-6 col-xl-5">
+													<ul class="social-icons"><li class="social-icon-skype"><a target="_blank" rel="noopener noreferrer" href="skype:pq.softs?chat" aria-label="Skype"><span class="fab fa-skype" aria-hidden="true"></span></a></li><li class="social-icon-whatsapp"><a target="_blank" rel="noopener noreferrer" href="https://wa.me/+79651202245?text=Hi" aria-label="Whatsapp"><span class="fab fa-whatsapp" aria-hidden="true"></span></a></li><li class="social-icon-vk"><a target="_blank" rel="noopener noreferrer" href="https://vk.com/veroyala" aria-label="Vk"><span class="fab fa-vk" aria-hidden="true"></span></a></li></ul>						
+											</div>
+	
+					<!-- Logo -->
+					<div id="sp-logo" class="col-12 col-xl-2 d-none d-xl-block">
+						<div class="sp-column d-flex align-items-center  justify-content-center">
+															
+								<a id="offcanvas-toggler" aria-label="Menu" class="offcanvas-toggler-left d-flex align-items-center" href="#" aria-hidden="true" title="Menu"><div class="burger-icon"><span></span><span></span><span></span></div></a><div class="logo"><a href="/Aurora/">
+				<img class='logo-image  d-none d-lg-inline-block'
+					srcset='http://localhost/Aurora/images/images.jpg 1x, http://localhost/Aurora/images/images.jpg 2x'
+					src='http://localhost/Aurora/images/images.jpg'
+					height='36px'
+					alt='Изучаем PHP'
+				/>
+				<img class="logo-image-phone d-inline-block d-lg-none" src="http://localhost/Aurora/images/images.jpg" alt="Изучаем PHP" /></a></div>													</div>
+					</div>
+
+					<!-- Social -->
+					<div id="sp-social" class="col-6 col-xl-5">
+						<div class="sp-column d-flex justify-content-end">
+							<!-- Social icons -->
+							<div class="social-wrap d-flex align-items-center">
+								
+															</div>
+
+							<!-- Related Modules -->
+							<div class="d-none d-lg-flex header-modules align-items-center">
+																	<div class="sp-module "><div class="sp-module-content">
+<form class="mod-finder js-finder-searchform form-search" action="/Aurora/index.php/component/finder/search?Itemid=101" method="get" role="search">
+    <label for="mod-finder-searchword0" class="visually-hidden finder">Search</label><input type="text" name="q" id="mod-finder-searchword0" class="js-finder-search-query form-control" value="" placeholder="Search &hellip;">
+            <input type="hidden" name="Itemid" value="101"></form>
+</div></div>								
+																	<div class="sp-module">
+<a class="sp-sign-in" href="/Aurora/index.php/component/users/login?Itemid=101" ><span class="far fa-user me-1" aria-hidden="true"></span><span class="signin-text d-none d-lg-inline-block">Sign In</span></a>
+</div>															</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<header id="sp-header" class="lg-header">
+	<div class="container">
+		<div class="container-inner">
+			<!-- Menu -->
+			<div class="row">
+				<div class="col-lg-3 col-6 d-block d-xl-none">
+					<div class="sp-column d-flex justify-content-between align-items-center">
+						<div id="sp-logo" class="menu-with-offcanvas">
+							
+							<a id="offcanvas-toggler" aria-label="Menu" class="offcanvas-toggler-left d-flex align-items-center" href="#" aria-hidden="true" title="Menu"><div class="burger-icon"><span></span><span></span><span></span></div></a><div class="logo"><a href="/Aurora/">
+				<img class='logo-image  d-none d-lg-inline-block'
+					srcset='http://localhost/Aurora/images/images.jpg 1x, http://localhost/Aurora/images/images.jpg 2x'
+					src='http://localhost/Aurora/images/images.jpg'
+					height='36px'
+					alt='Изучаем PHP'
+				/>
+				<img class="logo-image-phone d-inline-block d-lg-none" src="http://localhost/Aurora/images/images.jpg" alt="Изучаем PHP" /></a></div>						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-9 col-6 col-xl-12">
+					<div class="d-flex justify-content-end justify-content-xl-center align-items-center">
+						<!-- if offcanvas position left -->
+													<a id="offcanvas-toggler"  aria-label="Menu" title="Menu"  class="mega_offcanvas offcanvas-toggler-secondary offcanvas-toggler-left d-flex align-items-center" href="#"><div class="burger-icon"><span></span><span></span><span></span></div></a>
+						
+						<nav class="sp-megamenu-wrapper d-flex" role="navigation"><ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block"><li class="sp-menu-item current-item active"><a aria-current="page"  href="/Aurora/index.php"  >Объекты и классы</a></li><li class="sp-menu-item"><a   href="/Aurora/index.php/2025-04-01-09-01-09?catid[0]="  >Синтаксис</a></li><li class="sp-menu-item"><a   href="/Aurora/index.php/2025-04-01-09-01-46"  >MySQL в PHP</a></li><li class="sp-menu-item"><a   href="/Aurora/index.php/2025-04-01-09-02-23"  >Cookie</a></li><li class="sp-menu-item"><a   href="/Aurora/index.php/2025-04-01-09-02-50?catid[0]="  >Методы</a></li></ul></nav>						<div class="menu-with-offcanvas">
+							
+						</div>
+
+						<!-- if offcanvas position right -->
+								
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</header>				
+<section id="sp-section-1" >
+
+				
+	
+<div class="row">
+	<div id="sp-title" class="col-lg-12 "><div class="sp-column "></div></div></div>
+				
+	</section>
+
+<section id="sp-main-body" >
+
+										<div class="container">
+					<div class="container-inner">
+						
+	
+<div class="row">
+	<aside id="sp-left" class="col-lg-4 "><div class="sp-column "><div class="sp-module "><h3 class="sp-module-title">Лента</h3><div class="sp-module-content"><ul class="mod-articlesnews-horizontal newsflash-horiz mod-list">
+            <li itemscope itemtype="https://schema.org/Article">
+                    <h4 class="newsflash-title">
+            <a href="/Aurora/index.php/component/content/article/mysql-php?catid=13&amp;Itemid=101">
+            MySQL в PHP        </a>
+        </h4>
+
+
+    
+
+
+
+        </li>
+            <li itemscope itemtype="https://schema.org/Article">
+                    <h4 class="newsflash-title">
+            <a href="/Aurora/index.php/component/content/article/1?catid=13&amp;Itemid=101">
+            Тест         </a>
+        </h4>
+
+
+    
+
+
+
+        </li>
+            <li itemscope itemtype="https://schema.org/Article">
+                    <h4 class="newsflash-title">
+            <a href="/Aurora/index.php/component/content/article/2025-04-01-10-54-34?catid=13&amp;Itemid=101">
+            Объекты и классы        </a>
+        </h4>
+
+
+    
+
+
+
+        </li>
+            <li itemscope itemtype="https://schema.org/Article">
+                    <h4 class="newsflash-title">
+            <a href="/Aurora/index.php/component/content/article/2025-04-01-10-53-48?catid=13&amp;Itemid=101">
+            Синтаксис        </a>
+        </h4>
+
+
+    
+
+
+
+        </li>
+            <li itemscope itemtype="https://schema.org/Article">
+                    <h4 class="newsflash-title">
+            <a href="/Aurora/index.php/component/content/article/2025-04-01-10-53-04?catid=12&amp;Itemid=101">
+            MySQL в PHP        </a>
+        </h4>
+
+
+    
+
+
+
+        </li>
+    </ul>
+</div></div></div></aside>
+<main id="sp-component" class="col-lg-8 ">
+	<div class="sp-column ">
+		<div id="system-message-container" aria-live="polite">
+	</div>
+
+
+					<div class="sp-module-content-top clearfix">
+				<div class="sp-module "><div class="sp-module-content"><div class="mod-banners bannergroup">
+    <div class="bannerheader">
+        Изучаем PHP    </div>
+
+    <div class="mod-banners__item banneritem">
+                                                                                                                                                                                                        <img
+                        src="http://localhost/Aurora/images/banners/istockphoto-1167756845-1024x1024.jpg#joomlaImage://local-images/banners/istockphoto-1167756845-1024x1024.jpg?width=655&height=1024"
+                        alt="банер"
+                                                                    >
+                                        </div>
+
+</div>
+</div></div>
+			</div>
+		
+		
+<!-- for joomla3 -->
+
+<!-- for joomla4 -->
+<div class="com-contact contact" itemscope itemtype="https://schema.org/Person">
+			<h1>
+			Объекты и классы		</h1>
+	
+			<div class="page-header">
+			<h2>
+								<span class="contact-name" itemprop="name">Обратная связь</span>
+			</h2>
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+			<div class="row">
+						<div class="col">
+									<div class="contact-position d-flex mb-3">
+						<div class="me-2">
+							<strong>Position:</strong>
+						</div>
+						<div itemprop="jobTitle">
+							botom 1						</div>
+					</div>
+				
+				<div class="contact-info">
+					<div class="contact-address mb-4" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+	
+	
+			<div class="d-flex mt-2">
+			<div class="me-2">
+									<span class="fas fa-phone fa-fw" aria-hidden="true"></span><span class="visually-hidden">Phone</span>
+							</div>
+			
+			<div class="contact-telephone" itemprop="telephone">
+				+7  965 120  2245			</div>
+		</div>
+	
+	
+	
+	</div>									</div>
+			</div>
+
+					</div>
+	
+			<h3>Contact Form</h3>		<div class="contact-form">
+	<form id="contact-form" action="/Aurora/index.php" method="post" class="form-validate">
+															<fieldset>
+											<div class="control-group field-spacer">
+			<span class="spacer"><span class="before"></span><span class="text"><label id="jform_spacer-lbl" class=""><strong class="red">*</strong> Required field</label></span><span class="after"></span></span>		 	</div>
+											<div class="control-group">
+			<label id="jform_contact_name-lbl" for="jform_contact_name" class="required form-label">
+	Name<span class="star" aria-hidden="true">&#160;*</span></label>		
+
+	
+	<input
+		type="text"
+		name="jform[contact_name]"
+		id="jform_contact_name"
+		value=""
+				class="form-control required" size="30"        required aria-required="true"  autocomplete="off"     >
+
+	
+
+	</div>
+											<div class="control-group">
+			<label id="jform_contact_email-lbl" for="jform_contact_email" class="required form-label">
+	Email<span class="star" aria-hidden="true">&#160;*</span></label>		<input
+	type="email"
+	name="jform[contact_email]"
+	 class="form-control validate-email required"	id="jform_contact_email"
+	value=""
+	 size="30"    autocomplete="email"    required aria-required="true" >	</div>
+											<div class="control-group">
+			<label id="jform_contact_emailmsg-lbl" for="jform_contact_emailmsg" class="required form-label">
+	Subject<span class="star" aria-hidden="true">&#160;*</span></label>		
+
+	
+	<input
+		type="text"
+		name="jform[contact_subject]"
+		id="jform_contact_emailmsg"
+		value=""
+				class="form-control required" size="60"        required aria-required="true"  autocomplete="off"     >
+
+	
+
+	</div>
+											<div class="control-group">
+			<label id="jform_contact_message-lbl" for="jform_contact_message" class="required form-label">
+	Message<span class="star" aria-hidden="true">&#160;*</span></label>		<textarea name="jform[contact_message]" id="jform_contact_message"  cols="50"  rows="10" class="form-control required"      required aria-required="true" autocomplete="off"    ></textarea>	</div>
+									</fieldset>
+														<div class="control-group">
+			<div class="controls">
+				<button class="btn btn-primary validate" type="submit">Send Email</button>
+				<input type="hidden" name="option" value="com_contact">
+				<input type="hidden" name="task" value="contact.submit">
+				<input type="hidden" name="return" value="">
+									<input type="hidden" name="id" value="1:2024-11-04-17-33-56">
+								<input type="hidden" name="9471361cf95a4132cac8ca6ffcc20df1" value="1">			</div>
+		</div>
+	</form>
+</div>
+	
+	
+	
+	
+			
+
+
+	
+		</div>
+
+
+			</div>
+</main>
+</div>
+											</div>
+				</div>
+						
+	</section>
+
+<section id="sp-bottom" >
+
+						<div class="container">
+				<div class="container-inner">
+			
+	
+<div class="row">
+	<div id="sp-bottom2" class="col-sm-col-sm-6 col-lg-3 "><div class="sp-column "><ul class="sp-contact-info"><li class="sp-contact-mobile"><span class="fas fa-mobile-alt" aria-hidden="true"></span> <a href="tel:+79651202245">+79651202245</a></li><li class="sp-contact-email"><span class="far fa-envelope" aria-hidden="true"></span> <a href="mailto:veranikayalanskaya@yandex.ru">veranikayalanskaya@yandex.ru</a></li></ul></div></div><div id="sp-bottom4" class="col-lg-9 "><div class="sp-column "><div class="sp-module "><h3 class="sp-module-title">Menu</h3><div class="sp-module-content"><ul class="menu">
+<li class="item-101 default current active"><a href="/Aurora/index.php" >Объекты и классы</a></li><li class="item-121"><a href="/Aurora/index.php/2025-04-01-09-01-09?catid[0]=" >Синтаксис</a></li><li class="item-122"><a href="/Aurora/index.php/2025-04-01-09-01-46" >MySQL в PHP</a></li><li class="item-123"><a href="/Aurora/index.php/2025-04-01-09-02-23" >Cookie</a></li><li class="item-124"><a href="/Aurora/index.php/2025-04-01-09-02-50?catid[0]=" >Методы</a></li></ul>
+</div></div></div></div></div>
+							</div>
+			</div>
+			
+	</section>
+
+<footer id="sp-footer" >
+
+						<div class="container">
+				<div class="container-inner">
+			
+	
+<div class="row">
+	<div id="sp-footer1" class="col-lg-6 "><div class="sp-column "><span class="sp-copyright">© 2025</span></div></div><div id="sp-footer2" class="col-lg-6 "><div class="sp-column "><div class="sp-module "><h3 class="sp-module-title">Яланская Вероника Артуровна</h3><div class="sp-module-content"><div class="mod-footer">
+    <div class="footer1">Copyright &#169; 2025 Изучаем PHP. All Rights Reserved.</div>
+    <div class="footer2"><a href="https://www.joomla.org">Joomla!</a> is Free Software released under the <a href="https://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License.</a></div>
+</div>
+</div></div></div></div></div>
+							</div>
+			</div>
+			
+	</footer>
+			</div>
+		</div>
+
+		<!-- Off Canvas Menu -->
+		<div class="offcanvas-overlay"></div>
+		<!-- Rendering the offcanvas style -->
+		<!-- If canvas style selected then render the style -->
+		<!-- otherwise (for old templates) attach the offcanvas module position -->
+					<div class="offcanvas-menu border-menu">
+	<div class="d-flex align-items-center p-3 pt-4">
+		<div class="logo"><a href="/Aurora/">
+				<img class='logo-image  d-none d-lg-inline-block'
+					srcset='http://localhost/Aurora/images/images.jpg 1x, http://localhost/Aurora/images/images.jpg 2x'
+					src='http://localhost/Aurora/images/images.jpg'
+					height='36px'
+					alt='Изучаем PHP'
+				/>
+				<img class="logo-image-phone d-inline-block d-lg-none" src="http://localhost/Aurora/images/images.jpg" alt="Изучаем PHP" /></a></div>		<a href="#" class="close-offcanvas" aria-label="Close Off-canvas">
+			<div class="burger-icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</a>
+	</div>
+	<div class="offcanvas-inner">
+		<div class="d-flex header-modules mb-3">
+							<div class="sp-module "><div class="sp-module-content">
+<form class="mod-finder js-finder-searchform form-search" action="/Aurora/index.php/component/finder/search?Itemid=101" method="get" role="search">
+    <label for="mod-finder-searchword0" class="visually-hidden finder">Search</label><input type="text" name="q" id="mod-finder-searchword0" class="js-finder-search-query form-control" value="" placeholder="Search &hellip;">
+            <input type="hidden" name="Itemid" value="101"></form>
+</div></div>			
+							<div class="sp-module">
+<a class="sp-sign-in" href="/Aurora/index.php/component/users/login?Itemid=101" ><span class="far fa-user me-1" aria-hidden="true"></span><span class="signin-text d-none d-lg-inline-block">Sign In</span></a>
+</div>					</div>
+		
+					<div class="sp-module "><div class="sp-module-content"><ul class="menu nav-pills">
+<li class="item-101 default current active"><a href="/Aurora/index.php" >Объекты и классы</a></li><li class="item-121"><a href="/Aurora/index.php/2025-04-01-09-01-09?catid[0]=" >Синтаксис</a></li><li class="item-122"><a href="/Aurora/index.php/2025-04-01-09-01-46" >MySQL в PHP</a></li><li class="item-123"><a href="/Aurora/index.php/2025-04-01-09-02-23" >Cookie</a></li><li class="item-124"><a href="/Aurora/index.php/2025-04-01-09-02-50?catid[0]=" >Методы</a></li></ul>
+</div></div>		
+		
+					<div class="mb-4">
+				<ul class="sp-contact-info"><li class="sp-contact-mobile"><span class="fas fa-mobile-alt" aria-hidden="true"></span> <a href="tel:+79651202245">+79651202245</a></li><li class="sp-contact-email"><span class="far fa-envelope" aria-hidden="true"></span> <a href="mailto:veranikayalanskaya@yandex.ru">veranikayalanskaya@yandex.ru</a></li></ul>			</div>
+		
+					<ul class="social-icons"><li class="social-icon-skype"><a target="_blank" rel="noopener noreferrer" href="skype:pq.softs?chat" aria-label="Skype"><span class="fab fa-skype" aria-hidden="true"></span></a></li><li class="social-icon-whatsapp"><a target="_blank" rel="noopener noreferrer" href="https://wa.me/+79651202245?text=Hi" aria-label="Whatsapp"><span class="fab fa-whatsapp" aria-hidden="true"></span></a></li><li class="social-icon-vk"><a target="_blank" rel="noopener noreferrer" href="https://vk.com/veroyala" aria-label="Vk"><span class="fab fa-vk" aria-hidden="true"></span></a></li></ul>				
+					
+		
+		<!-- custom module position -->
+		
+	</div>
+</div>				
+
+		
+		
+
+		<!-- Go to top -->
+					<a href="#" class="sp-scroll-up" aria-label="Scroll Up"><span class="fas fa-angle-up" aria-hidden="true"></span></a>
+					</body>
+</html>
